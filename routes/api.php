@@ -23,3 +23,18 @@ Route::get('students/{id}', 'ApiController@getStudent');
 Route::post('students', 'ApiController@createStudent');
 Route::put('students/{id}', 'ApiController@updateStudent');
 Route::delete('students/{id}','ApiController@deleteStudent');
+
+
+//for oauth authentication
+Route::group([
+    'prefix' => 'auth'
+], function () {
+    Route::post('login', 'Auth\AuthController@login')->name('login');
+      Route::post('register', 'Auth\AuthController@register');
+      Route::group([
+          'middleware' => 'auth:api'
+       ], function() {
+        Route::get('logout', 'Auth\AuthController@logout');
+           Route::get('user', 'Auth\AuthController@user');
+    });
+});
