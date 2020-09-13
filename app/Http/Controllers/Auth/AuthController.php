@@ -37,17 +37,24 @@ class AuthController extends Controller
            ]);
         $credentials = request(['email', 'password']);
      // print_r($credentials);die;
-     if(!Auth::attempt($credentials))
+//       if(Auth::attempt(['email' => $request->email, 'password' => $request->password])){
+//           $user = Auth::user();
+//           $success['token'] =  $user->createToken('MyApp')-> accessToken;
+//           $success['name'] =  $user->name;
+//
+//           return $this->sendResponse($success, 'User login successfully.');
+//       }
+       if(!Auth::attempt($credentials))
          return response()->json([
             'message' => 'Unauthorized'
          ],401);
      $user = $request->user();
-
+//       return $user;
 //       $authenticated_user = Auth::user();
 //       $user = User::find($authenticated_user->id);
 
 // Creating a token without scopes...
-       $token = $user->createToken('Token Name')->accessToken;
+//       $token = $user->createToken('Token Name')->accessToken;
 //       return $token;
      $tokenResult = $user->createToken('Personal Access Token');
 
