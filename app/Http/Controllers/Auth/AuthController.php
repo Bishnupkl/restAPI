@@ -49,7 +49,8 @@ class AuthController extends Controller
             'message' => 'Unauthorized'
          ],401);
      $user = $request->user();
-//       return $user;
+     // dd($request);
+//      return $request;
 //       $authenticated_user = Auth::user();
 //       $user = User::find($authenticated_user->id);
 
@@ -65,6 +66,7 @@ class AuthController extends Controller
      return response()->json([
          'access_token' => $tokenResult->accessToken,
          'token_type' => 'Bearer',
+         'user_id'=>$user->id,
          'expires_at' => Carbon::parse(
              $tokenResult->token->expires_at
           )->toDateTimeString()

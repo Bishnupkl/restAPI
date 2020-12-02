@@ -23,10 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99d3ecdd-60d3-42f7-9827-0ff9911086cb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +190,9 @@
       <updated>1598409190571</updated>
       <workItem from="1598409191638" duration="4314000" />
       <workItem from="1599990761227" duration="10592000" />
+      <workItem from="1600014443782" duration="1096000" />
+      <workItem from="1600055789919" duration="26000" />
+      <workItem from="1606903404221" duration="5811000" />
     </task>
     <servers />
   </component>
@@ -206,16 +209,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="774" y="27" width="582" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600001930553">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="774" y="27" width="582" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.741@0.27.1366.741" timestamp="1600001930553" />
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600013997228">
+    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606906249359">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1600013997228" />
+    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1606906249359" />
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606915493865">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1606915493865" />
     <state x="374" y="136" width="761" height="522" key="find.popup" timestamp="1599991140860">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -224,9 +232,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="478" y="258" width="400" height="284" key="scopes/0.27.1366.741@0.27.1366.741" timestamp="1599990966290" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1600002786305">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1606906239024">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1600002786305" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1606906239024" />
   </component>
 </project>

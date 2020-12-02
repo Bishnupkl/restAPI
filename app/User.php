@@ -21,6 +21,8 @@ class User extends Authenticatable
         'first_name','last_name', 'email', 'password',
     ];
 
+
+
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -38,4 +40,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function gps()
+    {
+        $this->hasMany(Gps::class, 'user_id');
+    }
 }
