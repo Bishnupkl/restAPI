@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Gps;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -44,14 +45,16 @@ class GpsController extends Controller
             'time'=>'required',
         ]);
 
-
-        $input = $request->all();
-        $gps = Gps::create($input);
-        if($gps){
-            return response()->json([
-                'token_type' => 'Bearer',
-                'user_id'=>$gps->user_id,
-            ]);
+        $user=User::findOrFail($request->user_id);
+        if ($user) {
+            $input = $request->all();
+            $gps = Gps::create($input);
+            if ($gps) {
+                return response()->json([
+                    'message' => 'Gps co-ordinates stored succesfully',
+                    'user_id' => $gps->user_id,
+                ]);
+            }
         }
     }
 
